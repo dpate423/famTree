@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patel Family Tree</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    .node {
+      margin-left: 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    details {
+      margin-bottom: 10px;
+    }
+
+    .entry {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #e0f7fa;
+      margin: 4px 0;
+    }
+
+    .generation-1 .entry { background-color: #ffe0b2; }
+    .generation-2 .entry { background-color: #dcedc8; }
+    .generation-3 .entry { background-color: #bbdefb; }
+    .generation-4 .entry { background-color: #f8bbd0; }
+
+    .controls-fixed {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .controls-fixed button {
+      display: block;
+      padding: 8px 14px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .controls-fixed button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kachardas Muldas Ganeshdas Dhanjidas Ratandas and Kuvarben Patel Parivar</h1>
+  <p><strong>Founders:</strong> <span class="entry generation-1">Kachardas and Kuvarben Patel</span></p>
+
+  <div class="controls-fixed">
+    <button id="toggleButton" onclick="toggleAll()">🔐 Close All</button>
+  </div>
+
+  <details open class="generation-1">
+    <summary><span class="entry generation-1">Bhudardas + Passiben</span></summary>
+    <div class="node generation-2">
+      <details><summary><span class="entry generation-2">Daiben + Natwarlal</span></summary>
+        <div class="node generation-3">
+          <span class="entry generation-3">Vipul</span><br>
+          <span class="entry generation-3">Rohit</span>
+        </div>
+      </details>
+      <details><summary><span class="entry generation-2">Savitaben + Manubhai</span></summary>
+        <div class="node generation-3">
+          <span class="entry generation-3">Amit</span><br>
+          <span class="entry generation-3">Prakash</span>
+        </div>
+      </details>
+      <details><summary><span class="entry generation-2">Raiben + Pravinkumar</span></summary>
+        <div class="node generation-3">
+          <span class="entry generation-3">Deep</span><br>
+          <span class="entry generation-3">Pooja</span>
+        </div>
+      </details>
+      <details><summary><span class="entry generation-2">Jyotsanaben + Sureshlal</span></summary>
+        <div class="node generation-3">
+          <span class="entry generation-3">Maulik</span><br>
+          <span class="entry generation-3">Pratiksha</span>
+        </div>
+      </details>
+      <details><summary><span class="entry generation-2">Urmilaben + Rameshkumar</span></summary>
+        <div class="node generation-3">
+          <span class="entry generation-3">Harsh</span><br>
+          <span class="entry generation-3">Dharm</span>
+        </div>
+      </details>
+      <details><summary><span class="entry generation-2">Ambalal + Urmilaben</span></summary>
+        <div class="node generation-3">
+          <details><summary><span class="entry generation-3">Avani + Raj</span></summary></details>
+          <span class="entry generation-3">Dhvij</span>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details class="generation-1">
+    <summary><span class="entry generation-1">Leeldas + Amthiben</span></summary>
+    <div class="node generation-2">
+      <details><summary><span class="entry generation-2">Becharbhai + Raiben</span></summary>
+        <div class="node generation-3">
+          <details><summary><span class="entry generation-3">Rajni + Deviyani (Daxa)</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Dhyan</span><br>
+              <span class="entry generation-4">Deven</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Hansha + Paresh</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Parth</span><br>
+              <span class="entry generation-4">Meet</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Manali + Satish</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Ridham</span><br>
+              <span class="entry generation-4">Vedant</span>
+            </div>
+          </details>
+        </div>
+      </details>
+      <details><summary><span class="entry generation-2">Babubhai + Shantaben</span></summary>
+        <div class="node generation-3">
+          <details><summary><span class="entry generation-3">Yogesh + Alpa</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Manan</span><br>
+              <span class="entry generation-4">Dhruvi</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Surekha + Vishnu</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Vir</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Nayna + Yogesh</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Ved</span><br>
+              <span class="entry generation-4">Krisha</span>
+            </div>
+          </details>
+        </div>
+      </details>
+      <!-- More children from Leeldas will follow here -->
+    </div>
+  </details>
+
+  <details class="generation-1">
+    <summary><span class="entry generation-1">Tribhovandas + Miratma</span></summary>
+    <div class="node generation-2">
+      <details><summary><span class="entry generation-2">Manorbhai + Jiviben</span></summary>
+        <div class="node generation-3">
+          <details><summary><span class="entry generation-3">Prakash + Sharmista</span></summary>
+            <div class="node generation-4">
+              <details><summary><span class="entry generation-4">Shiv + Sima</span></summary></details>
+              <span class="entry generation-4">Dev</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Ravindra + Harshida</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Rudra</span><br>
+              <span class="entry generation-4">Arush</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Bhagvati + Anilkumar</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Gaurav</span><br>
+              <span class="entry generation-4">Priyanka</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Aruna + Piyushkumar</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Ankit</span><br>
+              <span class="entry generation-4">Khushbu</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Kalpana + Shailesh</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Priyank</span><br>
+              <span class="entry generation-4">Vidhi</span>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <details><summary><span class="entry generation-2">Shantilal + Savita</span></summary>
+        <div class="node generation-3">
+          <details><summary><span class="entry generation-3">Manish + Vishwa</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Ved</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Shilpa + Dipak</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Vatsal</span><br>
+              <span class="entry generation-4">Adit</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Dipali</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Henish</span>
+            </div>
+          </details>
+        </div>
+      </details>
+
+      <details><summary><span class="entry generation-2">Vithal + Anandi</span></summary>
+        <div class="node generation-3">
+          <details><summary><span class="entry generation-3">Mitesh + Varsha</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Heer</span><br>
+              <span class="entry generation-4">Heerva</span>
+            </div>
+          </details>
+          <details><summary><span class="entry generation-3">Bhavin + Unnati</span></summary>
+            <div class="node generation-4">
+              <span class="entry generation-4">Jinay</span><br>
+              <span class="entry generation-4">Devansh</span>
+            </div>
+          </details>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <script>
+    let isOpen = true;
+    function toggleAll() {
+      document.querySelectorAll("details").forEach(el => el.open = !isOpen);
+      isOpen = !isOpen;
+      document.getElementById("toggleButton").textContent = isOpen ? "🔐 Close All" : "🔓 Open All";
+    }
+  </script>
+
+</body>
+</html>
